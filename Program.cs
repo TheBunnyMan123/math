@@ -62,7 +62,7 @@ class Program {
         break;
     }
 
-    Expression expression = new Expression(inExpression + operandStr);
+    Expression expression = new Expression("(" + inExpression + ")" + operandStr);
 		Console.Write(expression.Eval());
   }
 
