@@ -12,7 +12,7 @@ provides=('math')
 source=("$pkgname::https://github.com/TheBunnyMan123/math/archive/refs/tags/$pkgver.tar.gz")
 sha256sums=('SKIP')
 
-build() {dd
+build() {
 	cd "$srcdir/$pkgname"
   dotnet publish -c Release -o release
 }
