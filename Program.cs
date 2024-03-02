@@ -1,5 +1,4 @@
 ﻿using System;
-using org.matheval;
 
 namespace math;
 
@@ -62,8 +61,7 @@ class Program {
         break;
     }
 
-    Expression expression = new Expression("(" + inExpression + ")" + operandStr);
-		Console.Write(expression.Eval());
+    Console.WriteLine("(" + inExpression + ")" + operandStr);
   }
 
   private static void DisplayHelp() {
